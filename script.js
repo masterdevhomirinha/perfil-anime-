@@ -2,6 +2,12 @@ const animeImage = document.getElementById("anime-image");
 const generateButton = document.getElementById("generate-button");
 const genderSelect = document.getElementById("gender-select");
 
+const randomAnimeUrls = [
+    "https://example.com/random_anime_1.jpg",
+    "https://example.com/random_anime_2.jpg",
+    // Adicione mais URLs de imagens de anime aleatórias aqui
+];
+
 const maleAnimeUrls = [
     "https://example.com/male_anime_1.jpg",
     "https://example.com/male_anime_2.jpg",
@@ -25,8 +31,7 @@ function generateImage() {
     } else if (selectedGender === "female") {
         animeUrls = femaleAnimeUrls;
     } else {
-        // Se a opção "Aleatório" for selecionada, misture as URLs de meninos e meninas
-        animeUrls = maleAnimeUrls.concat(femaleAnimeUrls);
+        animeUrls = randomAnimeUrls;
     }
 
     if (animeUrls.length > 0) {
