@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gerador de Imagens de Anime para Perfil do Discord</title>
+    <title>Gerador de Fotos de Anime</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Gerador de Imagens de Anime</h1>
-        <button id="generateButton">Gerar Imagem</button>
-        <div class="imageContainer">
-            <img id="animeImage" src="" alt="Imagem de Anime">
-            <a id="downloadLink" style="display: none;" download="anime_profile.png">Baixar Imagem</a>
+    <header>
+        <h1>Gerador de Fotos de Anime</h1>
+    </header>
+    <main>
+        <div id="image-container">
+            <img id="anime-image" src="" alt="Imagem de Anime">
+            <button id="generate-button">Gerar Nova</button>
+            <select id="gender-select">
+                <option value="random">Aleatório</option>
+                <option value="male">Menino</option>
+                <option value="female">Menina</option>
+            </select>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Gerador de Fotos de Anime</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
