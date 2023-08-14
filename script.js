@@ -3,21 +3,24 @@ const generateButton = document.getElementById("generate-button");
 const genderSelect = document.getElementById("gender-select");
 
 const randomAnimeUrls = [
-    "https://example.com/random_anime_1.jpg",
-    "https://example.com/random_anime_2.jpg",
-    // Adicione mais URLs de imagens de anime aleatórias aqui
+    "https://via.placeholder.com/300?text=Random",
+    "https://via.placeholder.com/300?text=Random",
+    "https://via.placeholder.com/300?text=Random"
+    // Adicione mais URLs de imagens aleatórias aqui
 ];
 
 const maleAnimeUrls = [
-    "https://example.com/male_anime_1.jpg",
-    "https://example.com/male_anime_2.jpg",
-    // Adicione mais URLs de imagens de anime masculino aqui
+    "https://via.placeholder.com/300?text=Male",
+    "https://via.placeholder.com/300?text=Male",
+    "https://via.placeholder.com/300?text=Male"
+    // Adicione mais URLs de imagens de homens aqui
 ];
 
 const femaleAnimeUrls = [
-    "https://example.com/female_anime_1.jpg",
-    "https://example.com/female_anime_2.jpg",
-    // Adicione mais URLs de imagens de anime feminino aqui
+    "https://via.placeholder.com/300?text=Female",
+    "https://via.placeholder.com/300?text=Female",
+    "https://via.placeholder.com/300?text=Female"
+    // Adicione mais URLs de imagens de mulheres aqui
 ];
 
 generateButton.addEventListener("click", generateImage);
